@@ -20,7 +20,6 @@
 		B6A6C26A268C211700798A62 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6C269268C211700798A62 /* RatingControl.swift */; };
 		B6A6C26C268C2AD600798A62 /* detailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6C26B268C2AD600798A62 /* detailedViewController.swift */; };
 		B6A6C26E268C51CB00798A62 /* repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6C26D268C51CB00798A62 /* repos.swift */; };
-		B6E40E0C2692F254003D1AF4 /* avatarIMG.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E40E0B2692F254003D1AF4 /* avatarIMG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		B6A6C269268C211700798A62 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		B6A6C26B268C2AD600798A62 /* detailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailedViewController.swift; sourceTree = "<group>"; };
 		B6A6C26D268C51CB00798A62 /* repos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repos.swift; sourceTree = "<group>"; };
-		B6E40E0B2692F254003D1AF4 /* avatarIMG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarIMG.swift; sourceTree = "<group>"; };
 		C4610E913595B6036898EF0E /* Pods-Project_Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_Mobile.debug.xcconfig"; path = "Target Support Files/Pods-Project_Mobile/Pods-Project_Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +160,6 @@
 				B6A6C25B268C143000798A62 /* Project_Mobile.xcdatamodeld */,
 				B6A6C269268C211700798A62 /* RatingControl.swift */,
 				B6A6C26D268C51CB00798A62 /* repos.swift */,
-				B6E40E0B2692F254003D1AF4 /* avatarIMG.swift */,
 			);
 			path = Project_Mobile;
 			sourceTree = "<group>";
@@ -345,7 +342,6 @@
 				B6A6C253268C143000798A62 /* AppDelegate.swift in Sources */,
 				B6A6C26E268C51CB00798A62 /* repos.swift in Sources */,
 				B6A6C26A268C211700798A62 /* RatingControl.swift in Sources */,
-				B6E40E0C2692F254003D1AF4 /* avatarIMG.swift in Sources */,
 				B6A6C255268C143000798A62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

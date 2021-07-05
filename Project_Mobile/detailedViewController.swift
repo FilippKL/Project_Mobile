@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import WebKit
 
 class detailedViewController: UIViewController {
     var userN: String = ""
     var words1 : String = ""
-    @IBOutlet weak var userImage: UIImageView!
+    
+    @IBOutlet weak var userAvatar: WKWebView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var stars: UILabel!
     @IBOutlet weak var issuesCount: UILabel!
@@ -21,36 +23,19 @@ class detailedViewController: UIViewController {
     
     override func viewDidLoad() {
         requestData()
-//        requestDataImage()
         userName?.text = words1
         print("\(userN) username" )
-
+        let avatarURL = URL(string: "https://avatars.githubusercontent.com/\(words1)")
+        userAvatar.load(URLRequest(url: avatarURL!))
     }
+    
     var sumStar : Int = 0
     var sumIssues: Int = 0
-    
-//    func requestDataImage() {
-//        let urlComponents = URLComponents(string: "https://api.github.com/users/\(words1)")
-//        let wordsRequest = URLRequest(url: urlComponents!.url!)
-//        let sharedSession = URLSession.shared
-//        let wordTask = sharedSession.dataTask(with: wordsRequest) { [self] (data, response, error) in
-//            if let data = data,
-//               let response = response as? HTTPURLResponse,
-//               (200..<300) ~= response.statusCode,
-//               error == nil,
-//               let requestedWord = try? JSONDecoder().decode([owner].self, from: data){
-//                print("\(requestedWord) url image")
-//
-//                }
-//        }
-//        wordTask.resume()
-//    }
     
     func requestData() {
         let urlComponents = URLComponents(string: "https://api.github.com/users/\(words1)/repos")
         let wordsRequest = URLRequest(url: urlComponents!.url!)
     
-        
         let sharedSession = URLSession.shared
         
         let wordTask = sharedSession.dataTask(with: wordsRequest) { [self] (data, response, error) in
